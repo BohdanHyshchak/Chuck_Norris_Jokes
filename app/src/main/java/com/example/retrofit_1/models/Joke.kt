@@ -1,4 +1,4 @@
-package com.example.retrofit_1
+package com.example.retrofit_1.models
 
 data class Joke(
     val categories: List<Any>,
