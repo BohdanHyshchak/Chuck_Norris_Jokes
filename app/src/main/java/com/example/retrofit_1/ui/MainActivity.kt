@@ -22,7 +22,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
     }
     fun nextJoke(view: View) {
-
         lifecycleScope.launchWhenCreated {
             val response = try {
                 RetrofitInstance.api.getJoke()

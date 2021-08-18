@@ -24,8 +24,8 @@ class MainViewModel(
         val response = jokeRepository.getJoke()
     }
 
-    private fun handleJokeResponse(response: Response<Joke>):Resource<Joke> {
-        if(response.isSuccessful) {
+    private fun handleJokeResponse(response: Response<Joke>): Resource<Joke> {
+        if (response.isSuccessful) {
             response.body()?.let { resultJoke ->
                 return Resource.success(resultJoke)
             }
