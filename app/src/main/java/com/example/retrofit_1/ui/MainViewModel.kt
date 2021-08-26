@@ -13,23 +13,27 @@ import retrofit2.Response
 class MainViewModel(
     val jokeRepository: JokeRepository
 ) : ViewModel() {
+
     init {
+        // getJoke()
         Log.i("JokeViewModel", "JokeViewModel created!")
     }
 
     val joke: MutableLiveData<Resource<Joke>> = MutableLiveData()
+    var textOfJoke = ""
 
     fun getJoke() = viewModelScope.launch {
-        joke.postValue(Resource.loading(null))
+        joke.postValue(Resource.Loading())
         val response = jokeRepository.getJoke()
+        joke.postValue(handleJokeResponse(response))
     }
 
     private fun handleJokeResponse(response: Response<Joke>): Resource<Joke> {
         if (response.isSuccessful) {
             response.body()?.let { resultJoke ->
-                return Resource.success(resultJoke)
+                return Resource.Success(resultJoke)
             }
         }
-        return Resource.error("Smth went wrong", null)
+        return Resource.Error("Smth went wrong", null)
     }
 }
