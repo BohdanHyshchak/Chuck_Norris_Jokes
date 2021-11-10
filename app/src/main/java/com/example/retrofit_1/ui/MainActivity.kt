@@ -10,14 +10,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 }
-
-
-
-
-
-
-
-
+//
 //    fun nextJoke(view: View) {
 //        lifecycleScope.launchWhenCreated {
 //            val response = try {

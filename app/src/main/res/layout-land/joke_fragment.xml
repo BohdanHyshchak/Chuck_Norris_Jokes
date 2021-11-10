@@ -40,6 +40,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/ivChukNorris" />
 
-
+//
 </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
