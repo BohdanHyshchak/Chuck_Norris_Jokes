@@ -13,7 +13,7 @@ import retrofit2.Response
 class MainViewModel(
     val jokeRepository: JokeRepository
 ) : ViewModel() {
-
+//
     init {
         // getJoke()
         Log.i("JokeViewModel", "JokeViewModel created!")

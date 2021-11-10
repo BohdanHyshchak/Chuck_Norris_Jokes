@@ -9,4 +9,5 @@
         android:name="com.example.retrofit_1.ui.fragments.JokeFragment"
         android:label="joke_fragment"
         tools:layout="@layout/joke_fragment" />
+    //
 </navigation>

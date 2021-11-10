@@ -17,7 +17,7 @@ import com.example.retrofit_1.ui.MainViewModelProviderFactory
 import com.example.retrofit_1.util.Resource
 
 class JokeFragment : Fragment() {
-
+//
     lateinit var binding: JokeFragmentBinding
     lateinit var viewModel: MainViewModel
     lateinit var viewModelFactory: MainViewModelProviderFactory
