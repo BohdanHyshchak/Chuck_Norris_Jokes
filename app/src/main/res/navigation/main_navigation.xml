@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/jokeFragment2">
+    <fragment
+        android:id="@+id/jokeFragment2"
+        android:name="com.example.retrofit_1.ui.fragments.JokeFragment"
+        android:label="joke_fragment"
+        tools:layout="@layout/joke_fragment" />
+</navigation>
